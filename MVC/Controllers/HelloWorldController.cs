@@ -4,13 +4,13 @@ using System.Text.Encodings.Web;
 namespace MvcMovie.Controllers;
 public class HellowWorldController : Controller
 {
-     // GET: /HelloWorld/
+
+    [HttpGet("/helloworld")]
     public string Index()
     {
-        return "This is my default action...";
+        return "HELLO WORLD";
     }
 
-  // GET: /HelloWorld/Welcome/ 
     public string Welcome()
     {
         return "This is the Welcome action method...";
