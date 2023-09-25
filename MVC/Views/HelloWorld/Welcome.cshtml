@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["Numtimes"]! ; i++)
+    {
+        <li>@ViewData["Message"]</li>
+    }
+</ul>
+
+@* http://localhost:5237/HelloWorld/Welcome?name=Rick&numtimes=4 *@
